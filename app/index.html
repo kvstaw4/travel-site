@@ -7,33 +7,40 @@
     <title>Travel Site</title>
 </head>
 <body>
-    <header id="header">
-        <div class="navbar">
-            <div class="logo">
-
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ADVISE</a></li>
-                    <li><a href="#">FEATURED</a></li>
-                    <li><a href="#">INSPIRATIONS</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                </ul>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__navbar">
+                <div class="header__logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="header__nav-links">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ADVISE</a></li>
+                        <li><a href="#">FEATURED</a></li>
+                        <li><a href="#">INSPIRATIONS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="home" class="home">
-        <picture>
-
+        <picture class="home__image">
+            <source srcset="assets/images/home--large.jpg 1920w, assets/images/home--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+                <source srcset="assets/images/home--medium.jpg 1380w, assets/images/home--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+                <source srcset="assets/images/home--small.jpg 990w, assets/images/home--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+                <img srcset="assets/images/home--smaller.jpg 640w, assets/images/home--smaller-hi-dpi.jpg 1280w" alt="View of lake and forest pic">
         </picture>
-        <div class="text-content">
-            <h3>NEW BOOK</h3>
-            <h1>TRAVEL IS WORTH YOUR TIME</h1>
-            <p>There are so many cities that have experienced such social and political in recent history. Travel will provide an opportunity to plunge into the wonderful views of nature.</p>
-            <p><a href="#" class="btn">BUY THE BOOK</a></p>
-        </div>
+            <div class="home__text-content">
+                <div class="wrapper">
+                    <h3 class="home__title">NEW BOOK</h3>
+                    <h1 class="home__subtitle">Travel Is <br>Worth Your Time</h1>
+                    <p class="home__description">There are so many cities that have experienced such social and political in recent history. Travel will provide an opportunity to plunge into the wonderful views of nature.</p>
+                    <p><a href="#" class="btn btn">BUY THE BOOK</a></p>
+                </div>
+            </div>
     </section>
 
     <section id="advise" class="advise">
@@ -248,5 +255,6 @@
         </div>
     </section>
 
+    <script src="bundled.js"></script>
 </body>
 </html>
