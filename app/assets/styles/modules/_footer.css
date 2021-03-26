@@ -1,0 +1,19 @@
+.footer {
+
+    &__container {
+        text-align: center;
+
+        @mixin atLarge {
+            text-align: left;
+        }
+    }
+    
+    &__container-links a {
+        color: black;
+        
+
+
+    }
+
+
+}
