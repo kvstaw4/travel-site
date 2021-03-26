@@ -4,6 +4,10 @@
     font-size: .9rem;
     line-height: 1.1rem;
 
+    &--p-b {
+        padding-bottom: 30px;
+    }
+
     @mixin atSmall {
         max-width: 350px;
         line-height: 1.3rem;

@@ -78,6 +78,7 @@
         &:hover {
             cursor: pointer;
             color: lightgray;
+            transition: .5s ease;
         }
         
         &-text {
