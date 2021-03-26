@@ -5,4 +5,10 @@
 @import 'modules/_header';
 @import 'modules/_home.css';
 @import 'modules/_wrapper.css';
+@import 'modules/_page-section.css';
 @import 'modules/_btn.css';
+@import 'modules/_headline.css';
+@import 'modules/_advise.css';
+@import 'modules/_featured.css';
+@import 'modules/_description.css';
+@import 'modules/_inspirations.css';

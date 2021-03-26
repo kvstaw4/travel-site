@@ -1,0 +1,15 @@
+.page-section {
+    padding-top: 20px;
+
+    @mixin atSmall {
+        padding-top: 40px;
+    }
+
+    @mixin atMedium {
+        padding-top: 60px;
+    }
+
+    @mixin atLarge {
+        padding-top: 80px;
+    }
+}

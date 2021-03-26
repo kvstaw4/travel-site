@@ -6,4 +6,17 @@
         padding-left: 100px;
         padding-right: 100px;
     }
+
+    &--l-p {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-left: 50px;
+        }
+
+        @mixin atLarge {
+            padding-left: 100px;
+        }
+    }
 }

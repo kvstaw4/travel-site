@@ -1,0 +1,16 @@
+.description {
+    padding-top: 5px;
+    max-width: 200px;
+    font-size: .9rem;
+    line-height: 1.1rem;
+
+    @mixin atSmall {
+        max-width: 350px;
+        line-height: 1.3rem;
+    }
+
+    @mixin atMedium {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

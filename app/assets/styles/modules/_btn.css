@@ -6,6 +6,23 @@
     padding: 15px 35px;
 
     &:hover {
-        background-color: $btnhover;
+        background-color: $hover;
+    }
+
+    &--featured {
+        border-radius: 25px;
+        background-color: $btnfeatured;
+        padding: 5px 15px;
+
+        &:hover {
+            background-color: $btnfeatured;
+            cursor: initial;
+        }
+
+        & img {
+            width: 20px;
+            height: 20px;
+            padding-top: 5%;
+        }
     }
 }

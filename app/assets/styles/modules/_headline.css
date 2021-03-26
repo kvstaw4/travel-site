@@ -1,0 +1,14 @@
+.headline {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+    
+    @mixin atSmall {
+        padding-bottom: 0;
+        font-size: 2.6rem;
+    }
+
+    @mixin atMedium {
+        font-size: 3.6rem;
+    }
+}
