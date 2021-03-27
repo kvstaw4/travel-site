@@ -1,8 +1,53 @@
 .header {
-    z-index: 10;
     width: 100%;
     height: 100px;
     position: fixed;
+    top: 0;
+    z-index: 100;
+
+    &__logo {
+        padding-top: 10px;
+        width: 150px;
+        height: 100px;
+        z-index: 15;
+
+        @mixin atSmall {
+            width: 200px;
+        }
+
+        @mixin atLarge {
+            padding-top: 22.5px;
+        }
+    }
+
+    &__menu-icon {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(assets/icons/bars-solid.png);
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        z-index: 100;
+
+        &.active {
+            margin-top: 5px;
+            background-image: url(assets/icons/close-solid.png);
+            background-repeat: no-repeat;
+        }
+
+        & img {
+            color: lightgrey;
+        }
+
+        @mixin atSmall {
+            top: 20px;
+        }
+
+        @mixin atLarge {
+            display: none;
+        }
+    }
     
     &__navbar {
         display: flex;
@@ -10,13 +55,66 @@
         align-items: center;
     }
 
+    &__nav-links {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: lightslategrey;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s ease-in-out;
+
+        &.active {
+            left: 0;
+        }
+
+        @mixin atLarge {
+            position: static;
+            background-color: transparent;
+            width: auto;
+            height: auto;
+        }
+    }
+
     &__nav-links ul{
         display: flex;
         list-style-type: none;
+        flex-direction: column;
+        
+        @mixin atLarge {
+            flex-direction: row;
+        }
+
+        & li {
+            padding: 10px;
+
+            @mixin atLarge {
+                padding: 0;
+            }
+        }
     }
 
     &__nav-links ul a{
-        padding: 20px;
-        color: white;
+        font-size: 2rem;
+        color: #111;
+        font-weight: 300;
+        
+        &:hover {
+            color: lightgrey;
+        }
+
+        @mixin atSmall {
+            font-size: 2.2rem;
+        }
+
+        @mixin atLarge {
+            padding: 20px;
+            color: white;
+            font-size: 1rem;
+        }
     }
 }
