@@ -1,0 +1,1 @@
+// gsap.from('.home__text-content', {opacity: 0, duration: 3, x: -100})
