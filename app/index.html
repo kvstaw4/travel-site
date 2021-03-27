@@ -16,18 +16,18 @@
                 <div class="header__menu-icon"></div>
                 <div class="header__nav-links">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#advise">ADVISE</a></li>
-                        <li><a href="#featured">FEATURED</a></li>
-                        <li><a href="#inspirations">INSPIRATIONS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#home" id="home-link">HOME</a></li>
+                        <li><a href="#advise" id="advise-link">ADVISE</a></li>
+                        <li><a href="#featured" id="featured-link">FEATURED</a></li>
+                        <li><a href="#inspirations" id="inspirations-link">INSPIRATIONS</a></li>
+                        <li><a href="#"><span>CONTACT US</span></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="home" class="home">
+    <section id="home" class="home page-sections" data-matching-link="#home-link">
         <picture class="home__image">
             <source srcset="assets/images/home--large.jpg 1920w, assets/images/home--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
                 <source srcset="assets/images/home--medium.jpg 1380w, assets/images/home--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
@@ -39,12 +39,12 @@
                     <h3 class="home__title">NEW BOOK</h3>
                     <h1 class="home__subtitle">Travel Is <br>Worth Your Time</h1>
                     <p class="description">There are so many cities that have experienced such social and political in recent history. Travel will provide an opportunity to plunge into the wonderful views of nature.</p>
-                    <p><a href="#" class="btn btn">BUY THE BOOK</a></p>
+                    <p><a href="#" class="btn">BUY THE BOOK</a></p>
                 </div>
             </div>
     </section>
 
-    <section id="advise" class="advise page-section">
+    <section id="advise" class="advise page-section page-sections" data-matching-link="#advise-link">
         <div class="wrapper">
             <div class="text-content">
                 <h1 class="headline">Get Confident <br> With Our Advise</h1>
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section id="featured" class="featured page-section">
+    <section id="featured" class="featured page-section page-sections" data-matching-link="#featured-link">
         <picture class="featured__image">
             <source srcset="assets/images/featured--large.jpg 1920w, assets/images/featured--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
                 <source srcset="assets/images/featured--medium.jpg 1380w, assets/images/featured--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
@@ -136,7 +136,7 @@
         </div>
     </section>
 
-    <section id="inspirations" class="inspirations page-section">
+    <section id="inspirations" class="inspirations page-section page-sections" data-matching-link="#inspirations-link">
         <div class="wrapper">
             <div class="inspirations__text">
                 <h1 class="headline">Inspirations</h1>
