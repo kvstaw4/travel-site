@@ -1,7 +1,7 @@
 .inspirations {
    
     &__container {
-        background-color: #333;
+        background-color: $inspirations;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
@@ -52,7 +52,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: rgba(0,0,0,0.3);
+        background: $darker;
     }
 
     &--bg-2 {
@@ -67,7 +67,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: rgba(0,0,0,0.3);
+        background: $darker;
     }
 
     &__item {

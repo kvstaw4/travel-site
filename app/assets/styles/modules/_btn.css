@@ -26,4 +26,10 @@
             padding-top: 5%;
         }
     }
+
+    &--contact-us {
+        margin-top: 30px;
+        color: black;
+        background-color: lightgray;
+    }
 }

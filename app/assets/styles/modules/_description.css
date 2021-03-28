@@ -8,6 +8,11 @@
         padding-bottom: 30px;
     }
 
+    &--contact-us {
+        margin: auto;
+        font-style: italic;
+    }
+
     @mixin atSmall {
         max-width: 350px;
         line-height: 1.3rem;
