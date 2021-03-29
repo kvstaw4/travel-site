@@ -411,7 +411,7 @@ a {
         cursor: pointer;
         width: 30px;
         height: 30px;
-        background-image: url(assets/icons/bars-solid.png);
+        background-image: url(assets/images/bars-solid.png);
         position: absolute;
         top: 10px;
         right: 50px;
@@ -420,7 +420,7 @@ a {
 
 .header__menu-icon.active {
             margin-top: 5px;
-            background-image: url(assets/icons/close-solid.png);
+            background-image: url(assets/images/close-solid.png);
             background-repeat: no-repeat;
         }
 
